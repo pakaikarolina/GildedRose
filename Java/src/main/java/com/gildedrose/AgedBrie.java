@@ -1,7 +1,6 @@
 package com.gildedrose;
 
-public class AgedBrie extends Item {
-
+public class AgedBrie extends RegularItem {
 
     public static final int MAX_QUALITY = 50;
 
