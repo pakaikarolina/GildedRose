@@ -1,21 +1,14 @@
 package com.gildedrose;
 
-public class Item {
+public interface Item {
 
-    public String name;
+    void updateItem();
 
-    public int sellIn;
+    int getQuality();
 
-    public int quality;
+    void setQuality(int quality);
 
-    public Item(String name, int sellIn, int quality) {
-        this.name = name;
-        this.sellIn = sellIn;
-        this.quality = quality;
-    }
-
-   @Override
-   public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.quality;
-    }
+    int getSellIn();
+    @Override
+    String toString();
 }
